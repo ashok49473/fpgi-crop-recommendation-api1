@@ -39,7 +39,7 @@ def test_method():
     return jsonify({"prediction": label})
     
 def run_server_api():
-    app.run(debug=True)
+    app.run(host="0.0.0.0")
 
 
 if __name__ == "__main__":     
